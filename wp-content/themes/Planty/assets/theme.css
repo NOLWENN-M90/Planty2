@@ -1,0 +1,74 @@
+/* PAGE COMMANDER */
+.quantity {
+    display : flex; 
+    margin-bottom : 10px;
+    justify-content: center;
+    
+    
+        }
+    .left-div {
+        background-color: white;
+        width :60%;
+        text-align: center;
+        border-radius : 10px 0 0 10px;
+        
+        }
+    .right-div {
+        display: flex;
+        color : white;
+        flex-direction: column;
+        background-color : #DC9F96;
+        width : 30%;
+        text-align: center;
+        border-radius : 0 10px 10px 0;
+    }
+    .deuxcolonnes{
+        display:flex; 
+        flex-direction:row;
+        column-gap: 69px;
+        justify-content:center;
+      flex-wrap:wrap; 
+    }
+    .colonnes1 , .colonnes2 {
+        width:383px;
+    }
+    .benvoyer{
+        padding-left:55px
+    }
+    .commander, .benvoyer {
+        display:flex;
+        justify-content:center;
+    }
+    .deuxcolonnes label {
+        white-space: normal!important;
+    }
+    .label {
+        width : auto!important ;
+        font-family: 'Syne';
+    }
+    .commander {
+        padding-left: 70px;
+        padding-top: 30px;
+        height:75px;
+    }
+    input[type=submit]{
+        text-transform:none;
+    
+    }
+    
+    .deuxcolonnes h2 {
+        font-family: 'Syne';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        color: white;
+    }
+    .border{
+        border-right: 1px solid #FFFFFF;
+    }
+@media (max-width : 766px) {
+.quantity { 
+    width : 100%;
+    } 
+}
