@@ -10,16 +10,14 @@ function theme_enqueue_styles()
     wp_enqueue_style('theme-style' , get_stylesheet_directory_uri() . '/assets/theme.css' , array() , filemtime(get_stylesheet_directory() . '/assets/theme.css'));
 }
 
-add_filter('wp_nav_menu_items', 'add_search_form', 10, 2);
-(is_user_logged_in() && $args->menu == 'menu-header');
 function add_search_form($items, $args) {
-    if( is_user_logged_in() && $args->theme_location == 'main_menu' ){
-    $items .= '<li><a href="./planty/wp-admin" class="admin">Admin</a></li>'; 
-    }
-    else{
-    }
+  if( (is_user_logged_in() && $args->menu == 8)){
+  $items .= '<li><a href="http://localhost/planty/wp-admin" class="admin">Admin</a></li>'; 
+  }
+  else{
+  }
 
-  return $items;
+return $items;
 }
-
+add_filter('wp_nav_menu_items', 'add_search_form', 10, 2);
 ?>
