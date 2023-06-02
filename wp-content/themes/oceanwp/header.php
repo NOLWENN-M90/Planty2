@@ -39,7 +39,4 @@
 
 				<?php do_action( 'ocean_page_header' ); ?>
 
-				<?php
-
-wp_nav_menu(['theme_location'=>'menu-header',]);
-?>
+				<?php wp_nav_menu(['theme_location'=>'header-ocean',]); ?>

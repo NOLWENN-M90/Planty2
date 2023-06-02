@@ -2,9 +2,9 @@
 .quantity {
     display: flex;
     margin-bottom: 10px;
-    justify-content: space-between;
-
-
+    width:100px;
+    margin-right:40px;
+    
 }
 
 .left-div {
@@ -13,6 +13,7 @@
     text-align: center;
     border-radius: 10px 0 0 10px;
 
+
 }
 
 .right-div {
@@ -20,22 +21,37 @@
     color: white;
     flex-direction: column;
     background-color: #DC9F96;
-    width: 30%;
+    width: 100px;
     text-align: center;
     border-radius: 0 10px 10px 0;
+    justify-content: space-between;
 }
-
+.order-button{
+    width:100%!important;
+    color : #FFFFFF;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-right:20px;
+}
+.top-div{
+    border-bottom: 1px solid #FFFFFF;
+}
 /* Formulaire 2 colonnes */
 
 .deuxcolonnes {
+    
     display: flex;
     flex-direction: row;
     column-gap: 80px;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right:50px;
 
 }
-
+.deuxcolonnes label{
+    color:#ffffff;
+}
 .commander,.benvoyer {
     display: flex;
     justify-content: center;
@@ -46,17 +62,22 @@
     padding-top: 30px;
 
 }
+.label{
+    color:#FFFFFF!important;
+}
 
 .border {
     border-right: 1px solid #FFFFFF;
-    margin: auto,
+    
 }
+
 
 /* Formulaire page "Nous recontrer" */
 
 .benvoyer {
     padding-top: 10px;
     padding-left : 70px;
+    margin-right:20px;
 }
 
 input{

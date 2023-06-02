@@ -37,3 +37,15 @@ function customstyle(){
 	wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/theme.css' );
 }
 add_action( 'wp_enqueue_scripts', 'customstyle' );
+
+// HOOK LIEN ADMIN DANS HEADER //
+
+add_filter('wp_nav_menu_items','add_admin_link', 10, 2 );
+
+function add_admin_link( $items, $args){
+	if (is_user_logged_in() && $args->theme_location == 'header-ocean'){
+		$items = $items. '<li><a href="'. admin_url() . '">Admin</a></li>' ;
+	}
+	return $items;
+}
+?>
