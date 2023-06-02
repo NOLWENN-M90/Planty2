@@ -52,7 +52,9 @@
 .deuxcolonnes label{
     color:#ffffff;
 }
-
+.deuxcolonnes input{
+    width : 383px!important;
+}
 .commander,.benvoyer {
     display: flex;
     justify-content: center;
@@ -83,6 +85,7 @@
 
 input{
     background-color: #FFFFFF;
+    
 }
 
 .butheader{
