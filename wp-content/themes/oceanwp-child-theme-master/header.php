@@ -17,43 +17,40 @@
 	<?php wp_head(); ?>
 </head>
 
-<header>
-	<div>
-	<a class="logo" href="<?php echo site_url() ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?> '/Logo.png' " alt="logo"> </a>
-		
-	</div>
-	<div>
-		<nav class="nav" href="http://localhost/Planty/nous-rencontrer-2/"> Nous rencontrer</nav>
-	</div>
-	<?php wp_nav_menu(['theme_location' => 'header2', 'container' => false, 'menu_class' => 'header']) ?>
-	<div>
-		<button class="buttheader" href="http://localhost/Planty/commander/">Commander</button>
-	</div>
-</header>
+<header class="header">
+        <?php
+        $custom_logo_id = get_theme_mod('custom_logo');
+        $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
+        ?>
 
 
-<body <?php body_class(); ?> <?php oceanwp_schema_markup('html'); ?>>
+        <a href="<?php echo esc_url(home_url('/')); ?>" class="logo">
+            <img src="<?php echo esc_url($logo[0]); ?>" alt="<?php bloginfo('name'); ?>">
+        </a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 
-	<?php wp_body_open(); ?>
+        <!-- On boucle pour afficher le menu -->
+            <!-- <?php $menu_items = wp_get_nav_menu_items('menu-principal'); 
 
-	<?php do_action('ocean_before_outer_wrap'); ?>
+                if (!empty($menu_items)) {
+                    echo '<ul class="menu">';
 
-	<div id="outer-wrap" class="site clr">
+                    foreach ($menu_items as $menu_item) {
+                        echo '<li><a href="' . $menu_item->url . '">' . $menu_item->title . '</a></li>';
+                    }
+                    echo '</ul>';       
+                }
+            ?> -->
+        
+        <?php
 
-		<a class="skip-link screen-reader-text" href="#main"><?php echo esc_html(oceanwp_theme_strings('owp-string-header-skip-link', false)); ?></a>
-
-		<?php do_action('ocean_before_wrap'); ?>
-
-	<!-- /* <div id="wrap" class="clr"> */ -->
-
-			<?php do_action('ocean_top_bar'); ?>
-
-			<?php do_action('ocean_header'); ?>
-
-			<?php do_action('ocean_before_main'); ?>
-
-			<main id="main" class="site-main clr" <?php oceanwp_schema_markup('main'); ?> role="main">
-
-				<?php do_action('ocean_page_header'); ?>
-
+        // Afficher le menu
+        wp_nav_menu(array(
+            'theme_location' => 'menu-principal',
+        ));
+        
+        ?>
+        
+    </header>
 				

@@ -1,8 +1,8 @@
 /* HEADER */
-header{
+/* header{
     display: inline-flex;
     flex-direction: row;
-    width:100%;
+    width:1440px;
     text-align: center;
     font-family: Syne ;
     font-weight: 700 ;
@@ -11,7 +11,7 @@ header{
     gap: 3px;
 }
 .logo{
-    width:200px;
+    width:200px!important;
     padding: 20px;
 }
 
@@ -35,8 +35,148 @@ header{
 }
 .butheader :hover{
     background-color: #C02E44;
-}
+} */
+/* ****** */
+/* HEADER */
+/* ****** */
 
+.header {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: #f4f4f4;
+  }
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    width: 200px;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top:15px;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  /* 48em = 768px */
+  
+  @media (min-width: 48em) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
+  
+  .menu li:last-child {
+    background-color: #dc9f96;
+    color: white;
+    font-weight: 400;
+  }
+      
+  
 /* PAGE COMMANDER */
 .quantity {
     display: flex;
@@ -113,7 +253,22 @@ header{
     
 }
 
-
+/* FOOTER */
+.section-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 68px;
+    background-color: white;
+    margin-top:10px;
+    font-family: Syne;
+    font-weight: 600;
+  }
+  .section-inner :hover{
+    
+    color: #C02E44;
+    text-decoration: underline 1px #C02E44 ;
+  }
 /* Formulaire page "Nous recontrer" */
 
 .benvoyer {
