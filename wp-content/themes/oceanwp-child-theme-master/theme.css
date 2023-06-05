@@ -1,13 +1,14 @@
 /* HEADER */
 header{
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
-    width:1440px;
+    width:100%;
     text-align: center;
     font-family: Syne ;
     font-weight: 700 ;
     margin: 0;
     padding: 0;
+    gap: 3px;
 }
 .logo{
     width:200px;
@@ -18,14 +19,16 @@ header{
     color: black;
     text-decoration: underline 1px #C02E44;
 }
-
-.butheader{
+#site-navigation-wrap{
+    display:none;
+    
+}
+.buttheader{
     width : 236px;
     height: 70px;
     padding: 20px;
     color : #ffffff;
     background-color: #DC9F96;
-    float: right;
     border: none;
     border-radius: none!important;
     
