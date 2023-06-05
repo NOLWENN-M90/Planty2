@@ -1,3 +1,34 @@
+/* HEADER */
+header{
+    
+    width:100%;
+    font-family: Syne ;
+    font-weight: 700 ;
+}
+.logo{
+    width:200px;
+}
+:hover .nav{
+    text-decoration: underline 2px #C02E44;
+    
+}
+
+
+
+
+
+
+.butheader{
+    width : 236px;
+    height: 70px;
+    text-align: center;
+    padding: 20px;
+    color : #ffffff;
+    background-color: #DC9F96;
+    float: right;
+}
+
+
 /* PAGE COMMANDER */
 .quantity {
     display: flex;
