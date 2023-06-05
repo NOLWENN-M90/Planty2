@@ -19,16 +19,14 @@
 
 <header>
 	<div>
-	<div>
-		<img class="logo" src="/Logo.png" alt="logo Planty">
+		<img class="logo" src="Planty/wp-content/themes/oceanwp-child-theme-master/Logo.png" alt="logo Planty">
 		<a href="http://localhost/Planty/"></a>
 	</div>
 	<div>
-		<a class="nav" href="http://localhost/Planty/nous-rencontrer-2/"> Nous rencontrer</a>
+		<nav class="nav" href="http://localhost/Planty/nous-rencontrer-2/"> Nous rencontrer </nav>
 	</div>
 	<div>
-		<a class="butheader" href="http://localhost/Planty/commander/">Commander</a>
-	</div>
+		<button class="butheader" href="http://localhost/Planty/commander/">Commander</button>
 	</div>
 </header>
 

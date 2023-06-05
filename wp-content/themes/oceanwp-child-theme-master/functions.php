@@ -43,7 +43,7 @@ add_action( 'wp_enqueue_scripts', 'customstyle' );
 add_filter('wp_nav_menu_items','add_admin_link', 10, 2 );
 
 function add_admin_link( $items, $args){
-	if (is_user_logged_in() && $args->theme_location == 'Header-Ocean'){
+	if (is_user_logged_in() && $args->theme_location == 'Header'){
 		$items = $items. '<li><a href="'. admin_url() . '">Admin</a></li>' ;
 	}
 	return $items;
