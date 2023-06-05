@@ -6,18 +6,17 @@ header{
     text-align: center;
     font-family: Syne ;
     font-weight: 700 ;
-
+    margin: 0;
+    padding: 0;
 }
 .logo{
     width:200px;
     padding: 20px;
 }
-.nav :hover {
-    text-decoration: underline 2px #C02E44;
-    
-}
-.nav {
 
+.nav {
+    color: black;
+    text-decoration: underline 1px #C02E44;
 }
 
 .butheader{
@@ -28,9 +27,12 @@ header{
     background-color: #DC9F96;
     float: right;
     border: none;
+    border-radius: none!important;
     
 }
-
+.butheader :hover{
+    background-color: #C02E44;
+}
 
 /* PAGE COMMANDER */
 .quantity {

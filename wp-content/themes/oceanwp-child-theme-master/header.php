@@ -18,16 +18,14 @@
 </head>
 
 <header>
-	<div>
-		<img class="logo" src="Planty/wp-content/themes/oceanwp-child-theme-master/Logo.png" alt="logo Planty">
+	
+		<img class="logo" src="/wp-content/themes/oceanwp-child-theme-master/Logo.png" alt="logo Planty">
 		<a href="http://localhost/Planty/"></a>
-	</div>
-	<div>
-		<nav class="nav" href="http://localhost/Planty/nous-rencontrer-2/"> Nous rencontrer </nav>
-	</div>
-	<div>
+	
+		<nav class="nav" href="http://localhost/Planty/nous-rencontrer-2/"> Nous rencontrer</nav>
+	
 		<button class="butheader" href="http://localhost/Planty/commander/">Commander</button>
-	</div>
+	 
 </header>
 
 
@@ -55,4 +53,4 @@
 
 				<?php do_action('ocean_page_header'); ?>
 
-				<?php wp_nav_menu(['theme_location' => 'Header-Ocean',]); ?>
+				<?php wp_nav_menu(['theme_location' => 'header',]); ?>
