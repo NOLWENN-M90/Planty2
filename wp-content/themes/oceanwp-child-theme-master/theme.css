@@ -1,47 +1,8 @@
 /* HEADER */
-/* header{
-    display: inline-flex;
-    flex-direction: row;
-    width:1440px;
-    text-align: center;
-    font-family: Syne ;
-    font-weight: 700 ;
-    margin: 0;
-    padding: 0;
-    gap: 3px;
-}
-.logo{
-    width:200px!important;
-    padding: 20px;
-}
-
-.nav {
-    color: black;
-    text-decoration: underline 1px #C02E44;
-}
-#site-navigation-wrap{
-    display:none;
-    
-}
-.buttheader{
-    width : 236px;
-    height: 70px;
-    padding: 20px;
-    color : #ffffff;
-    background-color: #DC9F96;
-    border: none;
-    border-radius: none!important;
-    
-}
-.butheader :hover{
-    background-color: #C02E44;
-} */
-/* ****** */
-/* HEADER */
 /* ****** */
 
 .header {
-    background-color: #fff;
+    background-color: #ffff;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
@@ -80,17 +41,20 @@
   /* menu */
   
   .header .menu {
+    font-family: Syne;
     clear: both;
     max-height: 0;
     transition: max-height 0.2s ease-out;
   }
-  
+  .header .menu :hover{
+    background-color: #C02E44;
+    color: #FFFFFF;
+  }
   /* menu icon */
   
   .header .menu-icon {
     cursor: pointer;
     display: inline-block;
-    float: right;
     padding: 28px 20px;
     position: relative;
     user-select: none;
@@ -254,7 +218,7 @@
 }
 
 /* FOOTER */
-.section-inner {
+.section-foot {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -264,8 +228,7 @@
     font-family: Syne;
     font-weight: 600;
   }
-  .section-inner :hover{
-    
+  .section-foot :hover{
     color: #C02E44;
     text-decoration: underline 1px #C02E44 ;
   }

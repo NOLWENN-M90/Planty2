@@ -8,7 +8,7 @@
 ?>
 <footer id="" class="">
 
-<div class="section-inner">
+<div class="section-foot">
 
 		<p class="">
 			<a href="#">

@@ -48,6 +48,7 @@ function register_my_menus() {
     );
 }
 add_action('init', 'register_my_menus');
+
 add_filter( 'wp_nav_menu_items','add_admin_link', 10, 2 );
 
 function add_admin_link( $items, $args ) {
