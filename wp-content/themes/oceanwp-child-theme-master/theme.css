@@ -13,7 +13,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    overflow: hidden;
+    overflow:hidden;
     background-color: #fff;
   }
   
@@ -26,6 +26,7 @@
   .header li a:hover,
   .header .menu-btn:hover {
     background-color: #f4f4f4;
+    
   }
   
   .header .logo {
@@ -92,6 +93,7 @@
   
   .header .menu-btn {
     display: none;
+    
   }
   
   .header .menu-btn:checked ~ .menu {
