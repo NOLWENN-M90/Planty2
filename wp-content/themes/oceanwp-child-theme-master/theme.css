@@ -138,11 +138,11 @@
     }
     
   }
-  
+  /* Affichage HOOK */
   #menu-menu-principal li:nth-child(2){
     background-color: #DC9F96;
     font-weight: 700;
-    color:white !important;
+    
 
 }
 .menu-item-1588 a {
